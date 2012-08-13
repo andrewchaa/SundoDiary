@@ -15,5 +15,10 @@ namespace SundoDiary.Controllers
         {
             return View();
         }
+
+        public ActionResult Read(string id)
+        {
+            return View();
+        }
     }
 }
