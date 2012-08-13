@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9AF1818A-A6D4-4338-9EC1-1D13AC022763}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SundoDiary</RootNamespace>
+    <AssemblyName>SundoDiary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\html\sdt00_99.htm" />
+    <Content Include="Content\html\sdt00_ix.htm" />
+    <Content Include="Content\html\sdt01_00.htm" />
+    <Content Include="Content\html\sdt01_01.htm" />
+    <Content Include="Content\html\sdt01_02.htm" />
+    <Content Include="Content\html\sdt01_03.htm" />
+    <Content Include="Content\html\sdt01_04.htm" />
+    <Content Include="Content\html\sdt01_05.htm" />
+    <Content Include="Content\html\sdt01_06.htm" />
+    <Content Include="Content\html\sdt01_07.htm" />
+    <Content Include="Content\html\sdt01_08.htm" />
+    <Content Include="Content\html\sdt01_09.htm" />
+    <Content Include="Content\html\sdt01_11.htm" />
+    <Content Include="Content\html\sdt01_12.htm" />
+    <Content Include="Content\html\sdt01_ix.htm" />
+    <Content Include="Content\html\sdt02_00.htm" />
+    <Content Include="Content\html\sdt02_01.htm" />
+    <Content Include="Content\html\sdt02_02.htm" />
+    <Content Include="Content\html\sdt02_03.htm" />
+    <Content Include="Content\html\sdt02_04.htm" />
+    <Content Include="Content\html\sdt02_90.htm" />
+    <Content Include="Content\html\sdt02_ix.htm" />
+    <Content Include="Content\html\sdt03_00.htm" />
+    <Content Include="Content\html\sdt03_01.htm" />
+    <Content Include="Content\html\sdt03_02.htm" />
+    <Content Include="Content\html\sdt03_03.htm" />
+    <Content Include="Content\html\sdt03_04.htm" />
+    <Content Include="Content\html\sdt03_05.htm" />
+    <Content Include="Content\html\sdt03_06.htm" />
+    <Content Include="Content\html\sdt03_07.htm" />
+    <Content Include="Content\html\sdt03_08.htm" />
+    <Content Include="Content\html\sdt03_ix.htm" />
+    <Content Include="Content\html\sdt04_00.htm" />
+    <Content Include="Content\html\sdt04_01.htm" />
+    <Content Include="Content\html\sdt04_02.htm" />
+    <Content Include="Content\html\sdt04_03.htm" />
+    <Content Include="Content\html\sdt04_04.htm" />
+    <Content Include="Content\html\sdt04_05.htm" />
+    <Content Include="Content\html\sdt04_06.htm" />
+    <Content Include="Content\html\sdt04_07.htm" />
+    <Content Include="Content\html\sdt04_08.htm" />
+    <Content Include="Content\html\sdt04_09.htm" />
+    <Content Include="Content\html\sdt04_ix.htm" />
+    <Content Include="Content\html\sdt05_00.htm" />
+    <Content Include="Content\html\sdt05_01.htm" />
+    <Content Include="Content\html\sdt05_02.htm" />
+    <Content Include="Content\html\sdt05_03.htm" />
+    <Content Include="Content\html\sdt05_04.htm" />
+    <Content Include="Content\html\sdt05_05.htm" />
+    <Content Include="Content\html\sdt05_06.htm" />
+    <Content Include="Content\html\sdt05_07.htm" />
+    <Content Include="Content\html\sdt05_ix.htm" />
+    <Content Include="Content\html\sdt06_00.htm" />
+    <Content Include="Content\html\sdt06_01.htm" />
+    <Content Include="Content\html\sdt06_02.htm" />
+    <Content Include="Content\html\sdt06_03.htm" />
+    <Content Include="Content\html\sdt06_04.htm" />
+    <Content Include="Content\html\sdt06_05.htm" />
+    <Content Include="Content\html\sdt06_06.htm" />
+    <Content Include="Content\html\sdt06_07.htm" />
+    <Content Include="Content\html\sdt06_08.htm" />
+    <Content Include="Content\html\sdt06_ix.htm" />
+    <Content Include="Content\html\sdt07_00.htm" />
+    <Content Include="Content\html\sdt07_01.htm" />
+    <Content Include="Content\html\sdt07_02.htm" />
+    <Content Include="Content\html\sdt07_03.htm" />
+    <Content Include="Content\html\sdt07_04.htm" />
+    <Content Include="Content\html\sdt07_05.htm" />
+    <Content Include="Content\html\sdt07_06.htm" />
+    <Content Include="Content\html\sdt07_07.htm" />
+    <Content Include="Content\html\sdt07_08.htm" />
+    <Content Include="Content\html\sdt07_ix.htm" />
+    <Content Include="Content\html\sdt08_00.htm" />
+    <Content Include="Content\html\sdt08_01.htm" />
+    <Content Include="Content\html\sdt08_02.htm" />
+    <Content Include="Content\html\sdt08_03.htm" />
+    <Content Include="Content\html\sdt08_04.htm" />
+    <Content Include="Content\html\sdt08_05.htm" />
+    <Content Include="Content\html\sdt08_06.htm" />
+    <Content Include="Content\html\sdt08_ix.htm" />
+    <Content Include="Content\html\sdt11_00.htm" />
+    <Content Include="Content\html\sdt11_01.htm" />
+    <Content Include="Content\html\sdt11_02.htm" />
+    <Content Include="Content\html\sdt11_03.htm" />
+    <Content Include="Content\html\sdt11_04.htm" />
+    <Content Include="Content\html\sdt11_05.htm" />
+    <Content Include="Content\html\sdt11_06.htm" />
+    <Content Include="Content\html\sdt11_09.htm" />
+    <Content Include="Content\html\sdt11_ix.htm" />
+    <Content Include="Content\html\sdt12_00.htm" />
+    <Content Include="Content\html\sdt12_01.htm" />
+    <Content Include="Content\html\sdt12_02.htm" />
+    <Content Include="Content\html\sdt12_03.htm" />
+    <Content Include="Content\html\sdt12_04.htm" />
+    <Content Include="Content\html\sdt12_05.htm" />
+    <Content Include="Content\html\sdt12_06.htm" />
+    <Content Include="Content\html\sdt12_ix.htm" />
+    <Content Include="Content\html\sdt13_00.htm" />
+    <Content Include="Content\html\sdt13_01.htm" />
+    <Content Include="Content\html\sdt13_02.htm" />
+    <Content Include="Content\html\sdt13_03.htm" />
+    <Content Include="Content\html\sdt13_04.htm" />
+    <Content Include="Content\html\sdt13_05.htm" />
+    <Content Include="Content\html\sdt13_06.htm" />
+    <Content Include="Content\html\sdt13_ix.htm" />
+    <Content Include="Content\html\sdt14_00.htm" />
+    <Content Include="Content\html\sdt14_01.htm" />
+    <Content Include="Content\html\sdt14_02.htm" />
+    <Content Include="Content\html\sdt14_03.htm" />
+    <Content Include="Content\html\sdt14_04.htm" />
+    <Content Include="Content\html\sdt14_05.htm" />
+    <Content Include="Content\html\sdt14_06.htm" />
+    <Content Include="Content\html\sdt14_07.htm" />
+    <Content Include="Content\html\sdt14_08.htm" />
+    <Content Include="Content\html\sdt14_09.htm" />
+    <Content Include="Content\html\sdt14_ix.htm" />
+    <Content Include="Content\html\sdt15_00.htm" />
+    <Content Include="Content\html\sdt15_01.htm" />
+    <Content Include="Content\html\sdt15_02.htm" />
+    <Content Include="Content\html\sdt15_03.htm" />
+    <Content Include="Content\html\sdt15_04.htm" />
+    <Content Include="Content\html\sdt15_05.htm" />
+    <Content Include="Content\html\sdt15_06.htm" />
+    <Content Include="Content\html\sdt15_07.htm" />
+    <Content Include="Content\html\sdt15_ix.htm" />
+    <Content Include="Content\html\sdt16_00.htm" />
+    <Content Include="Content\html\sdt16_01.htm" />
+    <Content Include="Content\html\sdt16_02.htm" />
+    <Content Include="Content\html\sdt16_03.htm" />
+    <Content Include="Content\html\sdt16_04.htm" />
+    <Content Include="Content\html\sdt16_05.htm" />
+    <Content Include="Content\html\sdt16_06.htm" />
+    <Content Include="Content\html\sdt16_07.htm" />
+    <Content Include="Content\html\sdt16_08.htm" />
+    <Content Include="Content\html\sdt16_09.htm" />
+    <Content Include="Content\html\sdt16_10.htm" />
+    <Content Include="Content\html\sdt16_11.htm" />
+    <Content Include="Content\html\sdt16_ix.htm" />
+    <Content Include="Content\html\sdt17_00.htm" />
+    <Content Include="Content\html\sdt17_01.htm" />
+    <Content Include="Content\html\sdt17_02.htm" />
+    <Content Include="Content\html\sdt17_03.htm" />
+    <Content Include="Content\html\sdt17_04.htm" />
+    <Content Include="Content\html\sdt17_05.htm" />
+    <Content Include="Content\html\sdt17_06.htm" />
+    <Content Include="Content\html\sdt17_07.htm" />
+    <Content Include="Content\html\sdt17_08.htm" />
+    <Content Include="Content\html\sdt17_09.htm" />
+    <Content Include="Content\html\sdt17_10.htm" />
+    <Content Include="Content\html\sdt17_ix.htm" />
+    <Content Include="Content\html\sdt18_00.htm" />
+    <Content Include="Content\html\sdt18_01.htm" />
+    <Content Include="Content\html\sdt18_02.htm" />
+    <Content Include="Content\html\sdt18_03.htm" />
+    <Content Include="Content\html\sdt18_04.htm" />
+    <Content Include="Content\html\sdt18_05.htm" />
+    <Content Include="Content\html\sdt18_06.htm" />
+    <Content Include="Content\html\sdt18_07.htm" />
+    <Content Include="Content\html\sdt18_08.htm" />
+    <Content Include="Content\html\sdt18_10.htm" />
+    <Content Include="Content\html\sdt18_ix.htm" />
+    <Content Include="Content\html\sdt19_00.htm" />
+    <Content Include="Content\html\sdt19_01.htm" />
+    <Content Include="Content\html\sdt19_02.htm" />
+    <Content Include="Content\html\sdt19_03.htm" />
+    <Content Include="Content\html\sdt19_04.htm" />
+    <Content Include="Content\html\sdt19_05.htm" />
+    <Content Include="Content\html\sdt19_06.htm" />
+    <Content Include="Content\html\sdt19_07.htm" />
+    <Content Include="Content\html\sdt19_08.htm" />
+    <Content Include="Content\html\sdt19_09.htm" />
+    <Content Include="Content\html\sdt19_ix.htm" />
+    <Content Include="Content\html\sdt20_00.htm" />
+    <Content Include="Content\html\sdt20_01.htm" />
+    <Content Include="Content\html\sdt20_02.htm" />
+    <Content Include="Content\html\sdt20_03.htm" />
+    <Content Include="Content\html\sdt20_04.htm" />
+    <Content Include="Content\html\sdt20_05.htm" />
+    <Content Include="Content\html\sdt20_06.htm" />
+    <Content Include="Content\html\sdt20_ix.htm" />
+    <Content Include="Content\html\sdt21_00.htm" />
+    <Content Include="Content\html\sdt21_01.htm" />
+    <Content Include="Content\html\sdt21_02.htm" />
+    <Content Include="Content\html\sdt21_03.htm" />
+    <Content Include="Content\html\sdt21_04.htm" />
+    <Content Include="Content\html\sdt21_05.htm" />
+    <Content Include="Content\html\sdt21_06.htm" />
+    <Content Include="Content\html\sdt21_07.htm" />
+    <Content Include="Content\html\sdt21_08.htm" />
+    <Content Include="Content\html\sdt21_09.htm" />
+    <Content Include="Content\html\sdt21_ix.htm" />
+    <Content Include="Content\html\sdt22_00.htm" />
+    <Content Include="Content\html\sdt22_10.htm" />
+    <Content Include="Content\html\sdt22_99.htm" />
+    <Content Include="Content\html\sdt22_ix.htm" />
+    <Content Include="Content\html\sdt23_00.htm" />
+    <Content Include="Content\html\sdt23_99.htm" />
+    <Content Include="Content\html\sdt23_ix.htm" />
+    <Content Include="Content\html\sdt24_00.htm" />
+    <Content Include="Content\html\sdt24_10.htm" />
+    <Content Include="Content\html\sdt24_99.htm" />
+    <Content Include="Content\html\sdt24_ix.htm" />
+    <Content Include="Content\html\sdt25_00.htm" />
+    <Content Include="Content\html\sdt25_99.htm" />
+    <Content Include="Content\html\sdt25_ix.htm" />
+    <Content Include="Content\html\sdt26_00.htm" />
+    <Content Include="Content\html\sdt26_99.htm" />
+    <Content Include="Content\html\sdt26_ix.htm" />
+    <Content Include="Content\html\sdt27_00.htm" />
+    <Content Include="Content\html\sdt27_99.htm" />
+    <Content Include="Content\html\sdt27_ix.htm" />
+    <Content Include="Content\html\sdt28_00.htm" />
+    <Content Include="Content\html\sdt28_99.htm" />
+    <Content Include="Content\html\sdt28_ix.htm" />
+    <Content Include="Content\html\sdt29_00.htm" />
+    <Content Include="Content\html\sdt29_99.htm" />
+    <Content Include="Content\html\sdt29_ix.htm" />
+    <Content Include="Content\html\sdt30_00.htm" />
+    <Content Include="Content\html\sdt30_ix.htm" />
+    <Content Include="Content\html\sdt31_00.htm" />
+    <Content Include="Content\html\sdt31_99.htm" />
+    <Content Include="Content\html\sdt31_ix.htm" />
+    <Content Include="Content\html\sdt32_00.htm" />
+    <Content Include="Content\html\sdt32_99.htm" />
+    <Content Include="Content\html\sdt32_ix.htm" />
+    <Content Include="Content\html\sdt33_00.htm" />
+    <Content Include="Content\html\sdt33_99.htm" />
+    <Content Include="Content\html\sdt33_ix.htm" />
+    <Content Include="Content\html\sdt34_00.htm" />
+    <Content Include="Content\html\sdt34_99.htm" />
+    <Content Include="Content\html\sdt34_ix.htm" />
+    <Content Include="Content\html\sdt35_00.htm" />
+    <Content Include="Content\html\sdt35_99.htm" />
+    <Content Include="Content\html\sdt35_ix.htm" />
+    <Content Include="Content\html\sdt36_00.htm" />
+    <Content Include="Content\html\sdt36_16.htm" />
+    <Content Include="Content\html\sdt36_99.htm" />
+    <Content Include="Content\html\sdt36_ix.htm" />
+    <Content Include="Content\html\sdt37_00.htm" />
+    <Content Include="Content\html\sdt37_99.htm" />
+    <Content Include="Content\html\sdt37_ix.htm" />
+    <Content Include="Content\html\sdt38_00.htm" />
+    <Content Include="Content\html\sdt38_99.htm" />
+    <Content Include="Content\html\sdt38_ix.htm" />
+    <Content Include="Content\html\sdt39_00.htm" />
+    <Content Include="Content\html\sdt39_99.htm" />
+    <Content Include="Content\html\sdt39_ix.htm" />
+    <Content Include="Content\html\sdt40_00.htm" />
+    <Content Include="Content\html\sdt40_99.htm" />
+    <Content Include="Content\html\sdt40_ix.htm" />
+    <Content Include="Content\html\sdt41_00.htm" />
+    <Content Include="Content\html\sdt41_99.htm" />
+    <Content Include="Content\html\sdt41_ix.htm" />
+    <Content Include="Content\html\sdt42_00.htm" />
+    <Content Include="Content\html\sdt42_99.htm" />
+    <Content Include="Content\html\sdt42_ix.htm" />
+    <Content Include="Content\html\sdt43_00.htm" />
+    <Content Include="Content\html\sdt43_99.htm" />
+    <Content Include="Content\html\sdt43_ix.htm" />
+    <Content Include="Content\html\sdt44_00.htm" />
+    <Content Include="Content\html\sdt44_99.htm" />
+    <Content Include="Content\html\sdt44_ix.htm" />
+    <Content Include="Content\html\sdt45_00.htm" />
+    <Content Include="Content\html\sdt45_99.htm" />
+    <Content Include="Content\html\sdt45_ix.htm" />
+    <Content Include="Content\html\sdt46_00.htm" />
+    <Content Include="Content\html\sdt46_99.htm" />
+    <Content Include="Content\html\sdt46_ix.htm" />
+    <Content Include="Content\html\sdt47_00.htm" />
+    <Content Include="Content\html\sdt47_99.htm" />
+    <Content Include="Content\html\sdt47_ix.htm" />
+    <Content Include="Content\html\sdt48_00.htm" />
+    <Content Include="Content\html\sdt48_99.htm" />
+    <Content Include="Content\html\sdt48_ix.htm" />
+    <Content Include="Content\html\sdt49_00.htm" />
+    <Content Include="Content\html\sdt49_91.htm" />
+    <Content Include="Content\html\sdt49_99.htm" />
+    <Content Include="Content\html\sdt49_ix.htm" />
+    <Content Include="Content\html\sdt50_00.htm" />
+    <Content Include="Content\html\sdt50_99.htm" />
+    <Content Include="Content\html\sdt50_ix.htm" />
+    <Content Include="Content\html\sdt51_00.htm" />
+    <Content Include="Content\html\sdt51_99.htm" />
+    <Content Include="Content\html\sdt51_ix.htm" />
+    <Content Include="Content\html\sdt52_00.htm" />
+    <Content Include="Content\html\sdt52_99.htm" />
+    <Content Include="Content\html\sdt52_ix.htm" />
+    <Content Include="Content\html\sdt53_00.htm" />
+    <Content Include="Content\html\sdt53_99.htm" />
+    <Content Include="Content\html\sdt53_ix.htm" />
+    <Content Include="Content\html\sdt54_00.htm" />
+    <Content Include="Content\html\sdt54_99.htm" />
+    <Content Include="Content\html\sdt54_ix.htm" />
+    <Content Include="Content\html\sdt55_00.htm" />
+    <Content Include="Content\html\sdt55_99.htm" />
+    <Content Include="Content\html\sdt55_ix.htm" />
+    <Content Include="Content\html\sdt56_00.htm" />
+    <Content Include="Content\html\sdt56_99.htm" />
+    <Content Include="Content\html\sdt56_ix.htm" />
+    <Content Include="Content\html\sdt57_00.htm" />
+    <Content Include="Content\html\sdt57_99.htm" />
+    <Content Include="Content\html\sdt57_ix.htm" />
+    <Content Include="Content\html\sdt58_00.htm" />
+    <Content Include="Content\html\sdt58_99.htm" />
+    <Content Include="Content\html\sdt58_ix.htm" />
+    <Content Include="Content\html\sdt59_00.htm" />
+    <Content Include="Content\html\sdt59_99.htm" />
+    <Content Include="Content\html\sdt59_ix.htm" />
+    <Content Include="Content\html\sdt60_00.htm" />
+    <Content Include="Content\html\sdt60_99.htm" />
+    <Content Include="Content\html\sdt60_ix.htm" />
+    <Content Include="Content\html\sdt61_00.htm" />
+    <Content Include="Content\html\sdt61_99.htm" />
+    <Content Include="Content\html\sdt61_ix.htm" />
+    <Content Include="Content\html\sdt62_00.htm" />
+    <Content Include="Content\html\sdt62_99.htm" />
+    <Content Include="Content\html\sdt62_ix.htm" />
+    <Content Include="Content\html\sdt63_00.htm" />
+    <Content Include="Content\html\sdt63_99.htm" />
+    <Content Include="Content\html\sdt63_ix.htm" />
+    <Content Include="Content\html\sdt64_00.htm" />
+    <Content Include="Content\html\sdt64_99.htm" />
+    <Content Include="Content\html\sdt64_ix.htm" />
+    <Content Include="Content\html\sdt65_00.htm" />
+    <Content Include="Content\html\sdt65_99.htm" />
+    <Content Include="Content\html\sdt65_ix.htm" />
+    <Content Include="Content\html\sdt66_00.htm" />
+    <Content Include="Content\html\sdt66_99.htm" />
+    <Content Include="Content\html\sdt66_ix.htm" />
+    <Content Include="Content\html\sdt67_00.htm" />
+    <Content Include="Content\html\sdt67_99.htm" />
+    <Content Include="Content\html\sdt67_ix.htm" />
+    <Content Include="Content\html\sdt68_00.htm" />
+    <Content Include="Content\html\sdt68_99.htm" />
+    <Content Include="Content\html\sdt68_ix.htm" />
+    <Content Include="Content\html\sdt69_00.htm" />
+    <Content Include="Content\html\sdt69_98.htm" />
+    <Content Include="Content\html\sdt69_99.htm" />
+    <Content Include="Content\html\sdt69_ix.htm" />
+    <Content Include="Content\html\sdt70_00.htm" />
+    <Content Include="Content\html\sdt70_99.htm" />
+    <Content Include="Content\html\sdt70_ix.htm" />
+    <Content Include="Content\html\sdt71_00.htm" />
+    <Content Include="Content\html\sdt71_99.htm" />
+    <Content Include="Content\html\sdt71_ix.htm" />
+    <Content Include="Content\html\sdt72_00.htm" />
+    <Content Include="Content\html\sdt72_99.htm" />
+    <Content Include="Content\html\sdt72_ix.htm" />
+    <Content Include="Content\html\sdt73_00.htm" />
+    <Content Include="Content\html\sdt73_99.htm" />
+    <Content Include="Content\html\sdt73_ix.htm" />
+    <Content Include="Content\html\sdt74_00.htm" />
+    <Content Include="Content\html\sdt74_99.htm" />
+    <Content Include="Content\html\sdt74_ix.htm" />
+    <Content Include="Content\html\sdt75_00.htm" />
+    <Content Include="Content\html\sdt75_99.htm" />
+    <Content Include="Content\html\sdt75_ix.htm" />
+    <Content Include="Content\html\sdt76_00.htm" />
+    <Content Include="Content\html\sdt76_98.htm" />
+    <Content Include="Content\html\sdt76_99.htm" />
+    <Content Include="Content\html\sdt76_ix.htm" />
+    <Content Include="Content\html\sdt77_00.htm" />
+    <Content Include="Content\html\sdt77_99.htm" />
+    <Content Include="Content\html\sdt77_ix.htm" />
+    <Content Include="Content\html\sdt78_00.htm" />
+    <Content Include="Content\html\sdt78_99.htm" />
+    <Content Include="Content\html\sdt78_ix.htm" />
+    <Content Include="Content\html\sdt79_00.htm" />
+    <Content Include="Content\html\sdt79_99.htm" />
+    <Content Include="Content\html\sdt79_ix.htm" />
+    <Content Include="Content\html\sdt80_00.htm" />
+    <Content Include="Content\html\sdt80_ix.htm" />
+    <Content Include="Content\html\sdt81_00.htm" />
+    <Content Include="Content\html\sdt81_99.htm" />
+    <Content Include="Content\html\sdt81_ix.htm" />
+    <Content Include="Content\html\sdt82_00.htm" />
+    <Content Include="Content\html\sdt82_99.htm" />
+    <Content Include="Content\html\sdt82_ix.htm" />
+    <Content Include="Content\html\sdt83_00.htm" />
+    <Content Include="Content\html\sdt83_99.htm" />
+    <Content Include="Content\html\sdt83_ix.htm" />
+    <Content Include="Content\html\sdt84_00.htm" />
+    <Content Include="Content\html\sdt84_98.htm" />
+    <Content Include="Content\html\sdt84_99.htm" />
+    <Content Include="Content\html\sdt84_ix.htm" />
+    <Content Include="Content\images\glyphicons-halflings-white.png" />
+    <Content Include="Content\images\glyphicons-halflings.png" />
+    <Content Include="Content\scripts\bootstrap.min.js" />
+    <Content Include="Content\scripts\jquery-1.8.0.min.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Account\ChangePassword.cshtml" />
+    <Content Include="Views\Account\ChangePasswordSuccess.cshtml" />
+    <Content Include="Views\Account\LogOn.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_LogOnPartial.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>26751</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
