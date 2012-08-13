@@ -5,6 +5,7 @@ namespace SundoDiary.Test
 {
 
     [Subject(typeof(Domain.Downloader))]
+    [Ignore]
     public class When_the_downloader_retrieve_an_index
     {
         public static Domain.Downloader _downloader;
