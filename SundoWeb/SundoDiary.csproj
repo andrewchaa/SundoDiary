@@ -71,7 +71,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\html\Copy of sdt01_00.htm" />
     <Content Include="Content\html\sdt00_99.htm" />
     <Content Include="Content\html\sdt00_ix.htm" />
     <Content Include="Content\html\sdt01_00.htm" />
@@ -459,6 +461,7 @@
     <Content Include="Content\html\sdt84_ix.htm" />
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
+    <Content Include="Content\scripts\bootstrap.js" />
     <Content Include="Content\scripts\bootstrap.min.js" />
     <Content Include="Content\scripts\jquery-1.8.0.min.js" />
     <Content Include="Global.asax" />
@@ -489,6 +492,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Read.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SundoDownloader.Domain\SundoDiary.Domain.csproj">
+      <Project>{37A71B2A-C813-4A66-9148-8C7912ECFF89}</Project>
+      <Name>SundoDiary.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

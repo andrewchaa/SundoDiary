@@ -1,4 +1,9 @@
-﻿using System.Web.Mvc;
+﻿using System.IO;
+using System.Net;
+using System.Text;
+using System.Web.Hosting;
+using System.Web.Mvc;
+using SundoDiary.Domain.Repositories;
 
 namespace SundoDiary.Controllers
 {
@@ -18,7 +23,12 @@ namespace SundoDiary.Controllers
 
         public ActionResult Read(string id)
         {
-            return View();
+            string path = HostingEnvironment.MapPath("/Content/Html");
+            string content = System.IO.File.ReadAllText(Path.Combine(path, id), Encoding.Default);
+
+            var page = new DataPageParser().Parse(content);
+
+            return View(page);
         }
     }
 }

@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="DownloadTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="When_A_Data_Page_Is_Parsed.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -61,6 +62,14 @@
       <Project>{EE54351C-FF8F-47D8-A401-C9DE3387670A}</Project>
       <Name>SundoDiary.Downloader</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resource\Copy of sdt01_00.htm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\sdt01_00.htm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
