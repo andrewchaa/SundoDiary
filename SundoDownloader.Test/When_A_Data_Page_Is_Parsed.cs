@@ -29,6 +29,7 @@ namespace SundoDiary.Test
 
     }
 
+    [Ignore]
     public class Temp
     {
         private static byte[] _utfBytes;
