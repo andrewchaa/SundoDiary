@@ -1,14 +1,17 @@
-﻿using System.IO;
-using System.Net;
-using System.Text;
-using System.Web.Hosting;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using SundoDiary.Domain.Repositories;
 
 namespace SundoDiary.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IRepository _contents;
+
+        public HomeController(IRepository contents)
+        {
+            _contents = contents;
+        }
+
         public ActionResult Index()
         {
             ViewBag.Message = "Welcome to ASP.NET MVC!";
@@ -23,10 +26,7 @@ namespace SundoDiary.Controllers
 
         public ActionResult Read(string id)
         {
-            string path = HostingEnvironment.MapPath("/Content/Html");
-            string content = System.IO.File.ReadAllText(Path.Combine(path, id), Encoding.Default);
-
-            var page = new DataPageParser().Parse(content);
+            var page = _contents.Get(id);
 
             return View(page);
         }

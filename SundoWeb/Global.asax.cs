@@ -1,5 +1,9 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
+using System.Web.SessionState;
+using Castle.Windsor;
+using Castle.Windsor.Installer;
+using SundoDiary.Infrastructure;
 
 namespace SundoDiary
 {
@@ -8,6 +12,8 @@ namespace SundoDiary
 
     public class MvcApplication : System.Web.HttpApplication
     {
+        private IWindsorContainer _container;
+
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
@@ -31,6 +37,20 @@ namespace SundoDiary
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+
+            BootstrapContainer();
+        }
+
+        protected void Application_End()
+        {
+            _container.Dispose();
+        }
+
+
+        private void BootstrapContainer()
+        {
+            _container = new WindsorContainer().Install(FromAssembly.This());
+            ControllerBuilder.Current.SetControllerFactory(new WindsorControllerFactory(_container.Kernel));
         }
     }
 }

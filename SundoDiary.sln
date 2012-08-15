@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SundoDiary.Domain", "SundoD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SundoDiary", "SundoWeb\SundoDiary.csproj", "{9AF1818A-A6D4-4338-9EC1-1D13AC022763}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{4C7B7D63-B6C3-405C-9CC2-DC8BBA24FFAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SundoDiary.Converter", "SundoDiary.Converter\SundoDiary.Converter.csproj", "{4EA01177-119A-45E2-AC91-22AFBABC834A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,8 +63,22 @@ Global
 		{9AF1818A-A6D4-4338-9EC1-1D13AC022763}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{9AF1818A-A6D4-4338-9EC1-1D13AC022763}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{9AF1818A-A6D4-4338-9EC1-1D13AC022763}.Release|x86.ActiveCfg = Release|Any CPU
+		{4EA01177-119A-45E2-AC91-22AFBABC834A}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{4EA01177-119A-45E2-AC91-22AFBABC834A}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{4EA01177-119A-45E2-AC91-22AFBABC834A}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{4EA01177-119A-45E2-AC91-22AFBABC834A}.Debug|x86.ActiveCfg = Debug|x86
+		{4EA01177-119A-45E2-AC91-22AFBABC834A}.Debug|x86.Build.0 = Debug|x86
+		{4EA01177-119A-45E2-AC91-22AFBABC834A}.Release|Any CPU.ActiveCfg = Release|x86
+		{4EA01177-119A-45E2-AC91-22AFBABC834A}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{4EA01177-119A-45E2-AC91-22AFBABC834A}.Release|Mixed Platforms.Build.0 = Release|x86
+		{4EA01177-119A-45E2-AC91-22AFBABC834A}.Release|x86.ActiveCfg = Release|x86
+		{4EA01177-119A-45E2-AC91-22AFBABC834A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EE54351C-FF8F-47D8-A401-C9DE3387670A} = {4C7B7D63-B6C3-405C-9CC2-DC8BBA24FFAE}
+		{4EA01177-119A-45E2-AC91-22AFBABC834A} = {4C7B7D63-B6C3-405C-9CC2-DC8BBA24FFAE}
 	EndGlobalSection
 EndGlobal

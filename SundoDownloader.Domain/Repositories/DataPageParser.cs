@@ -1,3 +1,4 @@
+using System;
 using System.Text.RegularExpressions;
 
 namespace SundoDiary.Domain.Repositories
@@ -12,7 +13,7 @@ namespace SundoDiary.Domain.Repositories
             return new DataPage
                        {
                            Title = TitleRegex.Match(content).Groups["title"].Value, 
-                           Content = ContentRegex.Match(content).Groups["content"].Value
+                           Content = ContentRegex.Match(content).Groups["content"].Value.Replace(Environment.NewLine, "<br />")
                        };
         }
     }

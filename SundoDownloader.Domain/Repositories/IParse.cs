@@ -1,4 +1,4 @@
-namespace SundoDiary.Domain
+namespace SundoDiary.Domain.Repositories
 {
     public interface IParse<T>
     {
