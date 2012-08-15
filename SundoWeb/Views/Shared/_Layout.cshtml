@@ -22,6 +22,10 @@
           .sidebar-nav {
               padding: 9px 0;
           }
+          
+          .hero-unit {
+              background-image: url("/Content/images/zen_banner.jpg")
+          }
       </style>
 
       <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -70,10 +74,26 @@
               <!-- Sidebar -->
               <div class="well sidebar-nav">
                   <ul class="nav nav-list">
-                      <li class="nav-header">목차</li>
-                      <li>@Html.ActionLink("Chapter 1", "Read", "Home", new { id = "sdt01_00.htm" }, null)</li>
-                      <li><a href="/Content/html/sdt01_02.htm">Link</a></li>
-                      <li class="nav-header">Sidebar</li>
+                    <li>@Html.ActionLink("운영자가 드리는 말씀", "Read", "Home", new { id = "sdt00_99.htm" }, null)</li>
+                    <li class="nav-header">제1권 단독수련</li>                     
+                    <li>@Html.ActionLink("제1장 선도수련을 하기까지", "Read", "Home", new { id = "sdt01_01.htm" }, null)</li>
+
+                    <li class="nav-header">제2장 첫 변화</li>                     
+                    <li>@Html.ActionLink("1. 진동과 열감", "Read", "Home", new { id = "sdt01_02.htm" }, null)</li>
+                    <li>@Html.ActionLink("2. 소주천", "Read", "Home", new { id = "sdt01_03.htm" }, null)</li>
+                    <li>@Html.ActionLink("3. 다양한 현상들", "Read", "Home", new { id = "sdt01_04.htm" }, null)</li>
+                    <li>@Html.ActionLink("4. 전신주천", "Read", "Home", new { id = "sdt01_05.htm" }, null)</li>
+                    <li>@Html.ActionLink("5. 정리", "Read", "Home", new { id = "sdt01_06.htm" }, null)</li>
+                      
+                    <li>@Html.ActionLink("제3장 오랜 침체기 14개월", "Read", "Home", new { id = "sdt01_07.htm" }, null)</li>
+                    <li>@Html.ActionLink("제4장 선도 수련과 성(性)", "Read", "Home", new { id = "sdt01_08.htm" }, null)</li>
+                    <li>@Html.ActionLink("제5장 수련 관련 해설", "Read", "Home", new { id = "sdt01_09.htm" }, null)</li>
+                    <li>@Html.ActionLink("제6장 태평양 시대에는", "Read", "Home", new { id = "sdt01_11.htm" }, null)</li>
+                    <li>@Html.ActionLink("제7장 잡동사니", "Read", "Home", new { id = "sdt01_12.htm" }, null)</li>
+@*                    <li>@Html.ActionLink("", "Read", "Home", new { id = ".htm" }, null)</li>*@
+@*                    <li>@Html.ActionLink("", "Read", "Home", new { id = ".htm" }, null)</li>*@
+@*                    <li>@Html.ActionLink("", "Read", "Home", new { id = ".htm" }, null)</li>*@
+                    <li class="nav-header">Sidebar</li>
                   </ul>
               </div><!--/.well -->
           </div><!--/span-->
