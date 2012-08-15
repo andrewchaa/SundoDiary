@@ -27,8 +27,12 @@ namespace SundoDiary.Converter
         private static void Titlise(FileInfo file)
         {
             string[] lines = File.ReadAllLines(file.FullName);
-            
-            
+            if (lines[0].Contains("<b>"))
+            {
+                lines[0] = lines[0].Replace("b", "title");
+            }
+
+            File.WriteAllLines(@"c:\temp\" + file.Name, lines, Encoding.UTF8);
         }
 
         private static void RemoveLeadingEmptyLines(FileInfo file)
