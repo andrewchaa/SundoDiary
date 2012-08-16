@@ -17,11 +17,21 @@ namespace SundoDiary.Converter
             foreach (var file in files)
             {
                 Console.WriteLine("Converting {0} ...", file.Name);
-                Titlise(file);
+                InsertContentTag(file);
+//                Titlise(file);
 //                EncodeToUnicode(file);
 //                RemoveLeadingEmptyLines(file);
 
             }
+        }
+
+        private static void InsertContentTag(FileInfo file)
+        {
+            List<string> lines = File.ReadAllLines(file.FullName).ToList();
+            lines.Insert(1, "<content>");
+            lines.Add("</content>");
+
+            File.WriteAllLines(@"c:\temp\" + file.Name, lines.ToArray(), Encoding.UTF8);
         }
 
         private static void Titlise(FileInfo file)
