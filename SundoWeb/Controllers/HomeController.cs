@@ -14,9 +14,7 @@ namespace SundoDiary.Controllers
 
         public ActionResult Index()
         {
-            ViewBag.Message = "Welcome to ASP.NET MVC!";
-
-            return View();
+            return RedirectToAction("Read", "Home", new {id = "sdt00_99.htm"});
         }
 
         public ActionResult About()
