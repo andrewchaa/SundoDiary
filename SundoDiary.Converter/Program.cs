@@ -13,17 +13,32 @@ namespace SundoDiary.Converter
         {
 //            var folder = new DirectoryInfo(@"C:\Users\Andrew\Projects\SundoDiary\SundoWeb\Content\html");
             var folder = new DirectoryInfo(@"C:\Users\andrew.chaa\Documents\Projects\SundoDiary\SundoWeb\Content\html");
-            var files = folder.GetFiles();
+            var files = folder.GetFiles("*ix.htm");
 
             foreach (var file in files)
             {
                 Console.WriteLine("Converting {0} ...", file.Name);
+                ExtractLinks(file);
+//                Titlise(file);
 //                InsertContentTag(file);
-                Titlise(file);
 //                EncodeToUnicode(file);
 //                RemoveLeadingEmptyLines(file);
 
             }
+        }
+
+        private static void ExtractLinks(FileInfo file)
+        {
+            string content = File.ReadAllText(file.FullName);
+            var linkPattern = new Regex(@"sdt[0-9]{2}_[0-9]{2}\.htm");
+
+            var matches = linkPattern.Matches(content);
+            foreach (var match in matches)
+            {
+                File.AppendAllText(@"c:\temp\links.html", match.ToString() + Environment.NewLine);
+            }
+
+            
         }
 
         private static void InsertContentTag(FileInfo file)
