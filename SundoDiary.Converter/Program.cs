@@ -17,8 +17,8 @@ namespace SundoDiary.Converter
             foreach (var file in files)
             {
                 Console.WriteLine("Converting {0} ...", file.Name);
-                InsertContentTag(file);
-//                Titlise(file);
+//                InsertContentTag(file);
+                Titlise(file);
 //                EncodeToUnicode(file);
 //                RemoveLeadingEmptyLines(file);
 
@@ -36,10 +36,11 @@ namespace SundoDiary.Converter
 
         private static void Titlise(FileInfo file)
         {
-            string[] lines = File.ReadAllLines(file.FullName);
-            if (lines[0].Contains("<b>"))
+            var lines = File.ReadAllLines(file.FullName).ToList();
+            if (lines[0].Contains("<title></title>"))
             {
-                lines[0] = lines[0].Replace("b", "title");
+                string title = lines.Where(l => l.Contains("<b>")).First();
+                lines[0] = title.Replace("b", "title");
             }
 
             File.WriteAllLines(@"c:\temp\" + file.Name, lines, Encoding.UTF8);
