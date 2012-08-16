@@ -11,7 +11,8 @@ namespace SundoDiary.Converter
     {
         static void Main(string[] args)
         {
-            var folder = new DirectoryInfo(@"C:\Users\Andrew\Projects\SundoDiary\SundoWeb\Content\html");
+//            var folder = new DirectoryInfo(@"C:\Users\Andrew\Projects\SundoDiary\SundoWeb\Content\html");
+            var folder = new DirectoryInfo(@"C:\Users\andrew.chaa\Documents\Projects\SundoDiary\SundoWeb\Content\html");
             var files = folder.GetFiles();
 
             foreach (var file in files)
@@ -40,6 +41,7 @@ namespace SundoDiary.Converter
             if (lines[0].Contains("<title></title>"))
             {
                 string title = lines.Where(l => l.Contains("<b>")).First();
+                lines.Remove(title);
                 lines[0] = title.Replace("b", "title");
             }
 
