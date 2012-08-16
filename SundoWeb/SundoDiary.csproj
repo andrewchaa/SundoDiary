@@ -466,9 +466,11 @@
     <Content Include="Content\html\sdt84_98.htm" />
     <Content Include="Content\html\sdt84_99.htm" />
     <Content Include="Content\html\sdt84_ix.htm" />
+    <Content Include="Content\html\std01_a.htm" />
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
     <Content Include="Content\images\zen_banner.jpg" />
+    <Content Include="Content\scripts\bootstrap-modal.js" />
     <Content Include="Content\scripts\bootstrap.js" />
     <Content Include="Content\scripts\bootstrap.min.js" />
     <Content Include="Content\scripts\jquery-1.8.0.min.js" />
