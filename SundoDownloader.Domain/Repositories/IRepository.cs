@@ -1,7 +1,11 @@
+using System.Collections.Generic;
+
 namespace SundoDiary.Domain.Repositories
 {
-    public interface IRepository
+    public interface IRepository<T>
     {
-        DataPage Get(string name);
+        T Get(string name);
+
+        IEnumerable<T> List();
     }
 }

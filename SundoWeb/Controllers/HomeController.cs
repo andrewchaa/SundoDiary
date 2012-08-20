@@ -1,15 +1,19 @@
 ﻿using System.Web.Mvc;
+using SundoDiary.Domain;
 using SundoDiary.Domain.Repositories;
+using SundoDiary.Models;
 
 namespace SundoDiary.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IRepository _contents;
+        private readonly IRepository<DataPage> _contents;
+        private readonly IRepository<ContentLink> _links;
 
-        public HomeController(IRepository contents)
+        public HomeController(IRepository<DataPage> contents, IRepository<ContentLink> links )
         {
             _contents = contents;
+            _links = links;
         }
 
         public ActionResult Index()
@@ -24,9 +28,14 @@ namespace SundoDiary.Controllers
 
         public ActionResult Read(string id)
         {
-            var page = _contents.Get(id);
+            var viewModel = new ReadViewModel
+                                {
+                                    PageName = id,
+                                    DataPage = _contents.Get(id),
+                                    Links = _links.List()
+                                };
 
-            return View(page);
+            return View(viewModel);
         }
     }
 }

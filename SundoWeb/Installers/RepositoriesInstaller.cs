@@ -13,8 +13,13 @@ namespace SundoDiary.Installers
         {
             container.Register(Component.For<DataPageParser, IParse<DataPage>>());
             container.Register(
-                Component.For<ContentRepository, IRepository>()
+                Component.For<ContentRepository, IRepository<DataPage>>()
                 .DependsOn(new { contentDirectory = HostingEnvironment.MapPath("/Content/Html")})
+            );
+
+            container.Register(
+                Component.For<ContentLinkRepository, IRepository<ContentLink>>()
+                .DependsOn(new {contentDirectory = HostingEnvironment.MapPath("/Content/json")})
             );
         }
     }

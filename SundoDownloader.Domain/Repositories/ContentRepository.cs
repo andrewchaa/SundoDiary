@@ -1,9 +1,10 @@
+using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
 namespace SundoDiary.Domain.Repositories
 {
-    public class ContentRepository : IRepository
+    public class ContentRepository : IRepository<DataPage>
     {
         private readonly string _contentDirectory;
         private readonly IParse<DataPage> _parser;
@@ -18,6 +19,11 @@ namespace SundoDiary.Domain.Repositories
         {
             string content = File.ReadAllText(Path.Combine(_contentDirectory, name), Encoding.UTF8);
             return _parser.Parse(content);
+        }
+
+        public IEnumerable<DataPage> List()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
