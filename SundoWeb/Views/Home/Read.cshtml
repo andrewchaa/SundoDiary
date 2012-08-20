@@ -1,6 +1,6 @@
 ﻿@model SundoDiary.Models.ReadViewModel
 @{
-    ViewBag.Title = Model.DataPage.Title;
+    ViewBag.Title = Model.PageData.Title;
 }
 
 <div class="span3">@Html.Partial("_SideBar", Model)</div><!--/span-->
@@ -12,9 +12,21 @@
     </div>
     <div class="row-fluid">
         <div class="span12">
-            <h2>@Html.Raw(Model.DataPage.Title)</h2><p>&nbsp;</p>
+            @if (!string.IsNullOrEmpty(Model.PreviousPage))
+            {
+                <p><a class="btn btn-info" href="@Url.Action("Read", "Home", new { id = Model.PreviousPage })">Previous</a></p>
+            }
+            
 
-            <p>@Html.Raw(Model.DataPage.Content)</p>
+            <h2>@Html.Raw(Model.PageData.Title)</h2><p>&nbsp;</p>
+
+            <p>@Html.Raw(Model.PageData.Content)</p>
+            
+            @if (!string.IsNullOrEmpty(Model.NextPage))
+            {
+                <p><a class="btn btn-info" href="@Url.Action("Read", "Home", new { id = Model.NextPage })">Next</a></p>    
+            }
+            
         </div><!--/span-->
     </div><!--/row-->
 

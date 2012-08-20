@@ -1,4 +1,6 @@
-﻿using System.Web.Mvc;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Web.Mvc;
 using SundoDiary.Domain;
 using SundoDiary.Domain.Repositories;
 using SundoDiary.Models;
@@ -28,12 +30,9 @@ namespace SundoDiary.Controllers
 
         public ActionResult Read(string id)
         {
-            var viewModel = new ReadViewModel
-                                {
-                                    PageName = id,
-                                    DataPage = _contents.Get(id),
-                                    Links = _links.List()
-                                };
+            var contentLinks = _links.List();
+            var pageData = _contents.Get(id);
+            var viewModel = new ReadViewModel(contentLinks, pageData, id);
 
             return View(viewModel);
         }
