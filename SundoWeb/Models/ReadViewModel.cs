@@ -23,17 +23,17 @@ namespace SundoDiary.Models
             _linksList = new LinkedList<string>(links.Where(l => !string.IsNullOrEmpty(l.Link)).Select(l => l.Link).ToList());
             var current = _linksList.Find(CurrentPage);
             if (current.Next != null)
-                NextPage = current.Next.Value;
+                NextPage = new ContentLink {Link = current.Next.Value};
 
             if (current.Previous != null)
-                PreviousPage = current.Previous.Value;
+                PreviousPage = new ContentLink {Link = current.Previous.Value};
                 
         }
 
         public string CurrentPage { get; set; }
         public DataPage PageData { get; private set; }
         public IEnumerable<ContentLink> Links { get; private set; }
-        public string NextPage { get; private set; }
-        public string PreviousPage { get; private set; }
+        public ContentLink NextPage { get; private set; }
+        public ContentLink PreviousPage { get; private set; }
     }
 }

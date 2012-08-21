@@ -12,20 +12,13 @@
     </div>
     <div class="row-fluid">
         <div class="span12">
-            @if (!string.IsNullOrEmpty(Model.PreviousPage))
-            {
-                <p><a class="btn btn-info" href="@Url.Action("Read", "Home", new { id = Model.PreviousPage })">Previous</a></p>
-            }
-            
+            @Html.Partial("Pager", Model)
 
             <h2>@Html.Raw(Model.PageData.Title)</h2><p>&nbsp;</p>
 
             <p>@Html.Raw(Model.PageData.Content)</p>
             
-            @if (!string.IsNullOrEmpty(Model.NextPage))
-            {
-                <p><a class="btn btn-info" href="@Url.Action("Read", "Home", new { id = Model.NextPage })">Next</a></p>    
-            }
+            @Html.Partial("Pager", Model)
             
         </div><!--/span-->
     </div><!--/row-->
