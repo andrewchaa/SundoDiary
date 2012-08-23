@@ -159,6 +159,38 @@
     {
         text: "선도체험기 1-10권 연표",
         link: "sdt04_09.htm"
+    },
+    {
+        text: "제5권 암벽추락과 병상수련",
+        link: ""
+    },
+    {
+        text: "1. 대선사와 민소영",
+        link: "sdt05_01.htm"
+    },
+    {
+        text: "2. 암벽 추락",
+        link: "sdt05_02.htm"
+    },
+    {
+        text: "3. 병상 수련",
+        link: "sdt05_03.htm"
+    },
+    {
+        text: "4. 민소영의 수련 지도",
+        link: "sdt05_04.htm"
+    },
+    {
+        text: "5. 수련 관련 글 모음",
+        link: "sdt05_05.htm"
+    },
+    {
+        text: "6. 병상의 단면들",
+        link: "sdt05_06.htm"
+    },
+    {
+        text: "7. 좌경 세력들을 걱정하며",
+        link: "sdt05_07.htm"
     }
 
 ]

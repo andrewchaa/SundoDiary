@@ -17,7 +17,6 @@ namespace SundoDiary.Converter
 
             foreach (var file in files)
             {
-                Console.WriteLine("Converting {0} ...", file.Name);
                 ExtractLinks(file);
 //                Titlise(file);
 //                InsertContentTag(file);
@@ -29,15 +28,27 @@ namespace SundoDiary.Converter
 
         private static void ExtractLinks(FileInfo file)
         {
+            Console.WriteLine("Extracting links from {0}", file.Name);
+
+            IList<string> links = new List<string>();
+
             string content = File.ReadAllText(file.FullName);
             var linkPattern = new Regex(@"sdt[0-9]{2}_[0-9]{2}\.htm");
+            string jsonFormat = 
+                "    {{" + Environment.NewLine +
+                "        text: \"\"," + Environment.NewLine +
+                "        link: \"{0}\"" + Environment.NewLine +
+                "    }}," + Environment.NewLine;
 
             var matches = linkPattern.Matches(content);
             foreach (var match in matches)
             {
-                File.AppendAllText(@"c:\temp\links.html", match.ToString() + Environment.NewLine);
+                if (links.IndexOf(match.ToString()) == -1)
+                {
+                    links.Add(match.ToString());
+                    File.AppendAllText(@"c:\temp\links.html", string.Format(jsonFormat, match));
+                }
             }
-
             
         }
 
