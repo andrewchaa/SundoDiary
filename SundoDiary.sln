@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{4C7B7D63-B6C3-405C-9CC2-DC8BBA24FFAE}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SundoDiary.Downloader", "SundoDownloader\SundoDiary.Downloader.csproj", "{EE54351C-FF8F-47D8-A401-C9DE3387670A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SundoDiary.Test", "SundoDownloader.Test\SundoDiary.Test.csproj", "{AA45CE1C-E521-4E63-934B-E1BAB631DA19}"
@@ -8,8 +10,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SundoDiary.Domain", "SundoDownloader.Domain\SundoDiary.Domain.csproj", "{37A71B2A-C813-4A66-9148-8C7912ECFF89}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SundoDiary", "SundoWeb\SundoDiary.csproj", "{9AF1818A-A6D4-4338-9EC1-1D13AC022763}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{4C7B7D63-B6C3-405C-9CC2-DC8BBA24FFAE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SundoDiary.Converter", "SundoDiary.Converter\SundoDiary.Converter.csproj", "{4EA01177-119A-45E2-AC91-22AFBABC834A}"
 EndProject

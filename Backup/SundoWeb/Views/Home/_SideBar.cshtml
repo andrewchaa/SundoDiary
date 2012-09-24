@@ -1,0 +1,23 @@
+﻿@model SundoDiary.Models.ReadViewModel
+
+<!-- Sidebar -->
+<div class="well sidebar-nav">
+    <ul class="nav nav-list">
+        @foreach(var link in Model.Links)
+        {
+            if (string.IsNullOrEmpty(link.Link)) {
+                <li class="nav-header">@link.Text</li>
+            } else {
+                if (link.Link == Model.CurrentPage) {
+                    <li class="active">@Html.ActionLink(link.Text, "Read", "Home", new { id = link.Link }, null)</li>
+                } else {
+                    <li>@Html.ActionLink(link.Text, "Read", "Home", new { id = link.Link }, null)</li>
+                }
+            }
+        }
+        
+
+    </ul>
+</div><!--/.well -->
+
+

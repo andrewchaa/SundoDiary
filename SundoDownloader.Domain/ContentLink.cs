@@ -15,5 +15,10 @@
             return Link == contentLink.Link && Text == contentLink.Text;
         }
 
+        public override string ToString()
+        {
+            return Text;
+
+        }
     }
 }

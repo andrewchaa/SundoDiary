@@ -31,11 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Machine.Specifications">
-      <HintPath>..\packages\Machine.Specifications.0.5.8\lib\net40\Machine.Specifications.dll</HintPath>
-    </Reference>
-    <Reference Include="Machine.Specifications.Clr4">
-      <HintPath>..\packages\Machine.Specifications.0.5.8\lib\net40\Machine.Specifications.Clr4.dll</HintPath>
+    <Reference Include="nunit.framework, Version=2.6.1.12217, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NUnit.2.6.1\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,10 +47,7 @@
     <Compile Include="DownloadTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="When_A_Data_Page_Is_Parsed.cs" />
-    <Compile Include="When_a_page_viewd.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
+    <Compile Include="TestContentLink.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SundoDownloader.Domain\SundoDiary.Domain.csproj">
@@ -75,6 +70,9 @@
     <Content Include="Resource\sdt01_00.htm">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

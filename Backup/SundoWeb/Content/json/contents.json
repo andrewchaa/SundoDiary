@@ -1,0 +1,349 @@
+﻿[
+	{
+		text: "운영자가 드리는 말씀",
+		link: "sdt00_99.htm"
+	},
+	{
+		text: "제1권 단독수련",
+		link: ""
+	},
+	{
+		text: "제1장 선도수련을 하기까지",
+		link: "sdt01_01.htm"
+	},
+	{
+		text: "제2장 첫 변화",
+		link: ""
+	},
+	{
+		text: "1. 진동과 열감",
+		link: "sdt01_02.htm"
+	},
+	{
+		text: "2. 소주천",
+		link: "sdt01_03.htm"
+	},
+    {
+        text: "3. 다양한 현상들",
+        link: "sdt01_04.htm"
+    },
+    {
+        text: "4. 전신주천",
+        link: "sdt01_05.htm"
+    },
+    {
+        text: "5. 정리",
+        link: "sdt01_06.htm"
+    },
+    {
+        text: "",
+        link: ""
+    },
+    {
+        text: "제3장 오랜 침체기 14개월",
+        link: "sdt01_07.htm"
+    },
+    {
+        text: "제4장 선도 수련과 성(性)",
+        link: "sdt01_08.htm"
+    },
+    {
+        text: "제5장 수련 관련 해설",
+        link: "sdt01_09.htm"
+    },
+    {
+        text: "제6장 태평양 시대에는",
+        link: "sdt01_11.htm"
+    },
+    {
+        text: "제7장 잡동사니",
+        link: "sdt01_12.htm"
+    },
+    {
+        text: "제2권 단학선원 수련",
+        link: ""
+    },
+
+    {
+        text: "제1장 축기과정 4개월",
+        link: "sdt02_01.htm"
+    },
+    {
+        text: "제2장 온몸으로 들어오는 기운",
+        link: "sdt02_02.htm"
+    },
+    {
+        text: "제3장 완전한 대주천",
+        link: "sdt02_03.htm"
+    },
+    {
+        text: "제4장 신공(神功)",
+        link: "sdt02_04.htm"
+    },
+    {
+        text: "제5장 뿌리를 찾아야지",
+        link: "sdt02_90.htm"
+    },
+    {
+        text: "제3권 환골탈태의 고통 6개월",
+        link: ""
+    },
+    {
+        text: "1. 고통의 시작",
+        link: "sdt03_01.htm"
+    },
+    {
+        text: "2. 생전 처음 겪는 통증",
+        link: "sdt03_02.htm"
+    },
+    {
+        text: "3. 또 한 고비 넘기다",
+        link: "sdt03_03.htm"
+    },
+    {
+        text: "4. 도지는 육식 거부증",
+        link: "sdt03_04.htm"
+    },
+    {
+        text: "5. 삶의 축을 옮겨라",
+        link: "sdt03_05.htm"
+    },
+    {
+        text: "6. 성숙해진 마음",
+        link: "sdt03_06.htm"
+    },
+    {
+        text: "7. 해설과 당부",
+        link: "sdt03_07.htm"
+    },
+    {
+        text: "8. 잡동사니",
+        link: "sdt03_08.htm"
+    },
+    {
+        text: "제4권 대전환",
+        link: ""
+    },
+    {
+        text: "1. 낙상/옛친구",
+        link: "sdt04_01.htm"
+    },
+    {
+        text: "2. 절수련/경전 읽기",
+        link: "sdt04_02.htm"
+    },
+    {
+        text: "3. 대선사의 비리",
+        link: "sdt04_03.htm"
+    },
+    {
+        text: "4. 고민 속의 수련",
+        link: "sdt04_04.htm"
+    },
+    {
+        text: "5. 선도체험기 출판",
+        link: "sdt04_05.htm"
+    },
+    {
+        text: "대선사 비난 글 모음",
+        link: "sdt04_06.htm"
+    },
+    {
+        text: "질의응답",
+        link: "sdt04_07.htm"
+    },
+    {
+        text: "선도체험기 4권 서문",
+        link: "sdt04_08.htm"
+    },
+    {
+        text: "선도체험기 1-10권 연표",
+        link: "sdt04_09.htm"
+    },
+    {
+        text: "제5권 암벽추락과 병상수련",
+        link: ""
+    },
+    {
+        text: "1. 대선사와 민소영",
+        link: "sdt05_01.htm"
+    },
+    {
+        text: "2. 암벽 추락",
+        link: "sdt05_02.htm"
+    },
+    {
+        text: "3. 병상 수련",
+        link: "sdt05_03.htm"
+    },
+    {
+        text: "4. 민소영의 수련 지도",
+        link: "sdt05_04.htm"
+    },
+    {
+        text: "5. 수련 관련 글 모음",
+        link: "sdt05_05.htm"
+    },
+    {
+        text: "6. 병상의 단면들",
+        link: "sdt05_06.htm"
+    },
+    {
+        text: "7. 좌경 세력들을 걱정하며",
+        link: "sdt05_07.htm"
+    },
+    {
+        text: "제6권 운사합법 초능력",
+        link: ""
+    },
+    {
+        text: "1. 백회 열어주는 재미",
+        link: "sdt06_01.htm"
+    },
+    {
+        text: "2. 자신감 속에서",
+        link: "sdt06_02.htm"
+    },
+    {
+        text: "3. 괘씸한 대선사",
+        link: "sdt06_03.htm"
+    },
+    {
+        text: "4. 다양한 보호령의 모습들",
+        link: "sdt06_04.htm"
+    },
+    {
+        text: "5. 상단전 경혈도 연다",
+        link: "sdt06_05.htm"
+    },
+    {
+        text: "6. 선원과 관계를 끊다",
+        link: "sdt06_06.htm"
+    },
+    {
+        text: "7. 인당/중단전 열어주기",
+        link: "sdt06_07.htm"
+    },
+    {
+        text: "8  대선사 비난 글 모음",
+        link: "sdt06_08.htm"
+    },
+    {
+        text: "제7권 백일수련과 단식수련",
+        link: ""
+    },
+    {
+        text: "1. 본성/공 체험",
+        link: "sdt07_01.htm"
+    },
+    {
+        text: "2. 벽사문/천부경 수련",
+        link: "sdt07_02.htm"
+    },
+    {
+        text: "3. 접신에서 풀려나다",
+        link: "sdt07_03.htm"
+    },
+    {
+        text: "4. 단식 준비",
+        link: "sdt07_04.htm"
+    },
+    {
+        text: "5. 단식수련/진아체험",
+        link: "sdt07_05.htm"
+    },
+    {
+        text: "6. 크게 열린 상.중단전",
+        link: "sdt07_06.htm"
+    },
+    {
+        text: "7. 수련 관련 해설",
+        link: "sdt07_07.htm"
+    },
+    {
+        text: "8. 대선사 비난 글",
+        link: "sdt07_08.htm"
+    },
+    {
+        text: "제8권  오행생식/선도체험기4권 발간",
+        link: ""
+    },
+    {
+        text: "1. 생식을 시작하다",
+        link: "sdt08_01.htm"
+    },
+    {
+        text: "2. 정관 복원 수술",
+        link: "sdt08_02.htm"
+    },
+    {
+        text: "3. 선도체험기 4권 발간",
+        link: "sdt08_03.htm"
+    },
+    {
+        text: "4. 운사합법 중단",
+        link: "sdt08_04.htm"
+    },
+    {
+        text: "5. 수련 관련 해설",
+        link: "sdt08_05.htm"
+    },
+    {
+        text: "6. 나를 찾아오는 조건",
+        link: "sdt08_06.htm"
+    },
+    {
+        text: "제11권 단학선원과의 싸움",
+        link: "sdt11_00.htm"
+    },
+    {
+        text: "1. 두 번의 검찰 피소",
+        link: "sdt11_01.htm"
+    },
+    {
+        text: "2. 선도 수련 해설",
+        link: "sdt11_02.htm"
+    },
+    {
+        text: "3. 나의 체험 이야기",
+        link: "sdt11_03.htm"
+    },
+    {
+        text: "4. 나를 찾아온 사람들",
+        link: "sdt11_04.htm"
+    },
+    {
+        text: "5. 잡동사니",
+        link: "sdt11_05.htm"
+    },
+    {
+        text: "제12권  맹종자와 구도자",
+        link: "sdt12_00.htm"
+    },
+    {
+        text: "1. 행패 부리는 맹종자들",
+        link: "sdt12_01.htm"
+    },
+    {
+        text: "2. 수련 해설과 견해",
+        link: "sdt12_02.htm"
+    },
+    {
+        text: "3. 찾아오려는 사람에게",
+        link: "sdt12_03.htm"
+    },
+    {
+        text: "4. 나의 이야기",
+        link: "sdt12_04.htm"
+    },
+    {
+        text: "5. 나를 찾아온 사람들",
+        link: "sdt12_05.htm"
+    },
+    {
+        text: "6. 잡동사니",
+        link: "sdt12_06.htm"
+    }
+
+]
+
