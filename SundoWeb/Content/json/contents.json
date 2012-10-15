@@ -351,7 +351,42 @@
     {
         text: "6. 잡동사니",
         link: "sdt12_06.htm"
+    },
+
+    {
+        text: "제13권  구걸형과 거래형",
+        link: ""
+    },
+    {
+        text: "안내",
+        link: "sdt13_00.htm"
+    },
+    {
+        text: "1. 수련 관련 해설",
+        link: "sdt13_01.htm"
+    },
+    {
+        text: "2. 구걸혈과 거래형",
+        link: "sdt13_02.htm"
+    },
+    {
+        text: "3. 나의 이야기",
+        link: "sdt13_03.htm"
+    },
+    {
+        text: "4. 여러 사례들 1",
+        link: "sdt13_04.htm"
+    },
+    {
+        text: "5. 여러 사례들 2",
+        link: "sdt13_05.htm"
+    },
+    {
+        text: "6. 잡동사니",
+        link: "sdt13_06.htm"
     }
+
+
 
 ]
 
