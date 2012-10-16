@@ -1,8 +1,28 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@model SundoDiary.Models.ReadViewModel
+@{
+    ViewBag.Title = Model.PageData.Title;
 }
 
-<h2>@ViewBag.Message</h2>
-<p>
-    To learn more about ASP.NET MVC visit <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
-</p>
+
+<div class="span3">@Html.Partial("_SideBar", Model)</div>
+
+<div class="span9">
+    
+    <div class="hero-unit">
+        &nbsp;
+    </div>
+    <div class="row-fluid">
+        <div class="span12">
+            @Html.Partial("Pager", Model)
+
+            <h2>@Html.Raw(Model.PageData.Title)</h2><p>&nbsp;</p>
+
+            <p>@Html.Raw(Model.PageData.Content)</p>
+            
+            @Html.Partial("Pager", Model)
+            
+        </div><!--/span-->
+    </div><!--/row-->
+
+</div><!--/span-->
+

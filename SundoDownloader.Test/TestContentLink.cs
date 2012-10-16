@@ -39,12 +39,12 @@ namespace SundoDiary.Test
             Assert.That(link1, Is.EqualTo(link2));
         }
         
-        [Test]
-        public void ViewMode_Knows_Nexxt_Page_Given_The_Current_Page()
-        {
-            _viewModel = new ReadViewModel(_links, _dataPage, "aa2.htm");
-            Assert.That(_viewModel.NextPage, Is.EqualTo(_aa3));
-        }
+//        [Test]
+//        public void ViewMode_Knows_Nexxt_Page_Given_The_Current_Page()
+//        {
+//            _viewModel = new ReadViewModel(_links, _dataPage, "aa2.htm");
+//            Assert.That(_viewModel.NextPage, Is.EqualTo(_aa3));
+//        }
 
 //
 //        private It should_skip_the_empty_link = () =>

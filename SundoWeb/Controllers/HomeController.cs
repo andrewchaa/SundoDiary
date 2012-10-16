@@ -18,9 +18,18 @@ namespace SundoDiary.Controllers
             _links = links;
         }
 
-        public ActionResult Index()
+        public ActionResult Index(string id)
         {
-            return RedirectToAction("Read", "Home", new {id = "sdt00_99.htm"});
+            if (string.IsNullOrEmpty(id))
+                id = "sdt00_99.htm";
+
+            //            return RedirectToAction("Read", "Home", new {id = "sdt00_99.htm"});
+
+            var contentLinks = _links.List();
+            var pageData = _contents.Get(id);
+            var viewModel = new ReadViewModel(contentLinks, pageData, id);
+
+            return View(viewModel);
         }
 
         public ActionResult About()
@@ -28,13 +37,5 @@ namespace SundoDiary.Controllers
             return View();
         }
 
-        public ActionResult Read(string id)
-        {
-            var contentLinks = _links.List();
-            var pageData = _contents.Get(id);
-            var viewModel = new ReadViewModel(contentLinks, pageData, id);
-
-            return View(viewModel);
-        }
     }
 }

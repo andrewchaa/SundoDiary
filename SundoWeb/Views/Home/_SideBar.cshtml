@@ -9,9 +9,9 @@
                 <li class="nav-header">@link.Text</li>
             } else {
                 if (link.Link == Model.CurrentPage) {
-                    <li class="active">@Html.ActionLink(link.Text, "Read", "Home", new { id = link.Link }, null)</li>
+                    <li class="active">@Html.ActionLink(link.Text, "Index", "Home", new { id = link.Link }, null)</li>
                 } else {
-                    <li>@Html.ActionLink(link.Text, "Read", "Home", new { id = link.Link }, null)</li>
+                    <li>@Html.ActionLink(link.Text, "Index", "Home", new { id = link.Link }, null)</li>
                 }
             }
         }

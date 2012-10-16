@@ -2,10 +2,10 @@
            
 <ul class="pager">
     @if (Model.PreviousPage != null) {
-        <li><a href="@Url.Action("Read", "Home", new { id = Model.PreviousPage.Link })">이전 글</a></li>
+        <li><a href="@Url.Action("Index", "Home", new { id = Model.PreviousPage.Link })">이전 글</a></li>
     }
     @if (Model.NextPage != null) {
-        <li><a href="@Url.Action("Read", "Home", new { id = Model.NextPage.Link })">다음 글</a></li>    
+        <li><a href="@Url.Action("Index", "Home", new { id = Model.NextPage.Link })">다음 글</a></li>    
     }
 </ul>
 

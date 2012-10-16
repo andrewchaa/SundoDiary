@@ -21,6 +21,10 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -86,7 +90,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\bootstrap.css" />
-    <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\html\sdt00_99.htm" />
     <Content Include="Content\html\sdt01_00.htm" />
     <Content Include="Content\html\sdt01_01.htm" />
@@ -474,9 +477,7 @@
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
     <Content Include="Content\images\zen_banner.jpg" />
-    <Content Include="Content\scripts\bootstrap-modal.js" />
     <Content Include="Content\scripts\bootstrap.js" />
-    <Content Include="Content\scripts\bootstrap.min.js" />
     <Content Include="Content\scripts\jquery-1.8.0.min.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -488,7 +489,6 @@
     </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_LogOnPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -500,9 +500,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Home\Read.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SundoDownloader.Domain\SundoDiary.Domain.csproj">
@@ -518,6 +515,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Pager.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\json\Copy of contents.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
