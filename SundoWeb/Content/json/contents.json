@@ -428,6 +428,38 @@
     {
         text: "9. 잡동사니",
         link: "sdt14_09.htm"
+    },
+    {
+        text: "제15권  방하착(放下着) 관법(觀法)",
+        link: ""
+    },
+    {
+        text: "15권 안내",
+        link: "sdt15_00.htm"
+    },
+    {
+        text: "1. 대행스님과 방하착",
+        link: "sdt15_01.htm"
+    },
+    {
+        text: "2. 병고액난과 신통력",
+        link: "sdt15_02.htm"
+    },
+    {
+        text: "3. 거래형 인간만 찾아오라",
+        link: "sdt15_03.htm"
+    },
+    {
+        text: "4. 나의 이야기",
+        link: "sdt15_04.htm"
+    },
+    {
+        text: "5. 나를 찾아온 사람들",
+        link: "sdt15_05.htm"
+    },
+    {
+        text: "6. 깨달음의 길",
+        link: "sdt15_06.htm"
     }
 
 
